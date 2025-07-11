@@ -1,0 +1,280 @@
+{
+  "task_type": "arabic_pluralization_patterns",
+  "description": "Generate plural forms of Arabic words following various pluralization patterns",
+  "language": "arabic",
+  "total_cases": 20,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "كتاب",
+      "expected_output": {
+        "plural": "كتب",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعُل",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "كتاب (book) becomes كتب (books) following the broken plural pattern فُعُل"
+    },
+    {
+      "id": 2,
+      "input": "مدرسة",
+      "expected_output": {
+        "plural": "مدارس",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "مَفَاعِل",
+        "pattern_description": "Broken plural pattern for place nouns"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "مدرسة (school) becomes مدارس (schools) following the مَفَاعِل pattern"
+    },
+    {
+      "id": 3,
+      "input": "معلم",
+      "expected_output": {
+        "plural": "معلمون",
+        "pattern_type": "جمع مذكر سالم",
+        "pattern_name": "ـون/ـين",
+        "pattern_description": "Sound masculine plural"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "معلم (teacher) becomes معلمون (teachers) following the sound masculine plural pattern"
+    },
+    {
+      "id": 4,
+      "input": "معلمة",
+      "expected_output": {
+        "plural": "معلمات",
+        "pattern_type": "جمع مؤنث سالم",
+        "pattern_name": "ـات",
+        "pattern_description": "Sound feminine plural"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "معلمة (female teacher) becomes معلمات (female teachers) following the sound feminine plural pattern"
+    },
+    {
+      "id": 5,
+      "input": "رجل",
+      "expected_output": {
+        "plural": "رجال",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فِعَال",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "رجل (man) becomes رجال (men) following the broken plural pattern فِعَال"
+    },
+    {
+      "id": 6,
+      "input": "بيت",
+      "expected_output": {
+        "plural": "بيوت",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعُول",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "بيت (house) becomes بيوت (houses) following the broken plural pattern فُعُول"
+    },
+    {
+      "id": 7,
+      "input": "قلم",
+      "expected_output": {
+        "plural": "أقلام",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "أَفْعَال",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "قلم (pen) becomes أقلام (pens) following the broken plural pattern أَفْعَال"
+    },
+    {
+      "id": 8,
+      "input": "ولد",
+      "expected_output": {
+        "plural": "أولاد",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "أَفْعَال",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "ولد (boy) becomes أولاد (boys) following the broken plural pattern أَفْعَال"
+    },
+    {
+      "id": 9,
+      "input": "صديق",
+      "expected_output": {
+        "plural": "أصدقاء",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "أَفْعِلاء",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "صديق (friend) becomes أصدقاء (friends) following the broken plural pattern أَفْعِلاء"
+    },
+    {
+      "id": 10,
+      "input": "كبير",
+      "expected_output": {
+        "plural": "كبار",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فِعَال",
+        "pattern_description": "Broken plural for adjectives"
+      },
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "كبير (big) becomes كبار (big ones) following the broken plural pattern فِعَال"
+    },
+    {
+      "id": 11,
+      "input": "نافذة",
+      "expected_output": {
+        "plural": "نوافذ",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فَوَاعِل",
+        "pattern_description": "Broken plural pattern for four-letter nouns"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "نافذة (window) becomes نوافذ (windows) following the broken plural pattern فَوَاعِل"
+    },
+    {
+      "id": 12,
+      "input": "جامعة",
+      "expected_output": {
+        "plural": "جامعات",
+        "pattern_type": "جمع مؤنث سالم",
+        "pattern_name": "ـات",
+        "pattern_description": "Sound feminine plural"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "جامعة (university) becomes جامعات (universities) following the sound feminine plural pattern"
+    },
+    {
+      "id": 13,
+      "input": "طالب",
+      "expected_output": {
+        "plural": "طلاب",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعَّال",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "طالب (student) becomes طلاب (students) following the broken plural pattern فُعَّال"
+    },
+    {
+      "id": 14,
+      "input": "عين",
+      "expected_output": {
+        "plural": "عيون",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعُول",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "عين (eye) becomes عيون (eyes) following the broken plural pattern فُعُول"
+    },
+    {
+      "id": 15,
+      "input": "مهندس",
+      "expected_output": {
+        "plural": "مهندسون",
+        "pattern_type": "جمع مذكر سالم",
+        "pattern_name": "ـون/ـين",
+        "pattern_description": "Sound masculine plural"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "مهندس (engineer) becomes مهندسون (engineers) following the sound masculine plural pattern"
+    },
+    {
+      "id": 16,
+      "input": "أسود",
+      "expected_output": {
+        "plural": "سود",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعْل",
+        "pattern_description": "Broken plural pattern for colors"
+      },
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "أسود (black) becomes سود (black ones) following the broken plural pattern فُعْل"
+    },
+    {
+      "id": 17,
+      "input": "مسجد",
+      "expected_output": {
+        "plural": "مساجد",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "مَفَاعِل",
+        "pattern_description": "Broken plural pattern for place nouns"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "مسجد (mosque) becomes مساجد (mosques) following the مَفَاعِل pattern"
+    },
+    {
+      "id": 18,
+      "input": "شاعر",
+      "expected_output": {
+        "plural": "شعراء",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعَلاء",
+        "pattern_description": "Broken plural pattern for professions"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "شاعر (poet) becomes شعراء (poets) following the broken plural pattern فُعَلاء"
+    },
+    {
+      "id": 19,
+      "input": "خبير",
+      "expected_output": {
+        "plural": "خبراء",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فُعَلاء",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "خبير (expert) becomes خبراء (experts) following the broken plural pattern فُعَلاء"
+    },
+    {
+      "id": 20,
+      "input": "حديقة",
+      "expected_output": {
+        "plural": "حدائق",
+        "pattern_type": "جمع تكسير",
+        "pattern_name": "فَعَائِل",
+        "pattern_description": "Broken plural pattern"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "حديقة (garden) becomes حدائق (gardens) following the broken plural pattern فَعَائِل"
+    }
+  ],
+  "evaluation_criteria": {
+    "plural_accuracy": "The plural form must be correct",
+    "pattern_identification": "The pluralization pattern must be correctly identified",
+    "pattern_type_accuracy": "The pattern type (sound vs broken) must be correct",
+    "scoring": {
+      "all_correct": 1,
+      "plural_correct_only": 0.7,
+      "pattern_correct_only": 0.3,
+      "incorrect": 0
+    }
+  }
+} 

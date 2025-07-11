@@ -1,0 +1,363 @@
+{
+  "task_type": "arabic_word_classification",
+  "description": "Classify Arabic words by their grammatical categories and parts of speech",
+  "language": "arabic",
+  "total_cases": 22,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "كتاب",
+      "expected_output": {
+        "part_of_speech": "اسم",
+        "english_pos": "noun",
+        "subcategory": "اسم مذكر",
+        "properties": {
+          "gender": "masculine",
+          "number": "singular",
+          "definiteness": "indefinite"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "كتاب is a masculine singular indefinite noun meaning book"
+    },
+    {
+      "id": 2,
+      "input": "يكتب",
+      "expected_output": {
+        "part_of_speech": "فعل",
+        "english_pos": "verb",
+        "subcategory": "فعل مضارع",
+        "properties": {
+          "tense": "present",
+          "person": "third",
+          "gender": "masculine",
+          "number": "singular"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "يكتب is a present tense verb meaning he writes"
+    },
+    {
+      "id": 3,
+      "input": "كبير",
+      "expected_output": {
+        "part_of_speech": "صفة",
+        "english_pos": "adjective",
+        "subcategory": "صفة مشبهة",
+        "properties": {
+          "gender": "masculine",
+          "number": "singular",
+          "definiteness": "indefinite"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "كبير is a masculine singular indefinite adjective meaning big"
+    },
+    {
+      "id": 4,
+      "input": "في",
+      "expected_output": {
+        "part_of_speech": "حرف جر",
+        "english_pos": "preposition",
+        "subcategory": "حرف جر أصلي",
+        "properties": {
+          "function": "indicating location or time"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "في is a preposition meaning in/at"
+    },
+    {
+      "id": 5,
+      "input": "كتب",
+      "expected_output": {
+        "part_of_speech": "فعل",
+        "english_pos": "verb",
+        "subcategory": "فعل ماضي",
+        "properties": {
+          "tense": "past",
+          "person": "third",
+          "gender": "masculine",
+          "number": "singular"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "كتب is a past tense verb meaning he wrote"
+    },
+    {
+      "id": 6,
+      "input": "المدرسة",
+      "expected_output": {
+        "part_of_speech": "اسم",
+        "english_pos": "noun",
+        "subcategory": "اسم مؤنث معرف",
+        "properties": {
+          "gender": "feminine",
+          "number": "singular",
+          "definiteness": "definite"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "المدرسة is a feminine singular definite noun meaning the school"
+    },
+    {
+      "id": 7,
+      "input": "سيكتب",
+      "expected_output": {
+        "part_of_speech": "فعل",
+        "english_pos": "verb",
+        "subcategory": "فعل مضارع مع السين",
+        "properties": {
+          "tense": "future",
+          "person": "third",
+          "gender": "masculine",
+          "number": "singular"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "سيكتب is a future tense verb meaning he will write"
+    },
+    {
+      "id": 8,
+      "input": "هذا",
+      "expected_output": {
+        "part_of_speech": "اسم إشارة",
+        "english_pos": "demonstrative pronoun",
+        "subcategory": "اسم إشارة للقريب",
+        "properties": {
+          "gender": "masculine",
+          "number": "singular",
+          "distance": "near"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "هذا is a demonstrative pronoun meaning this (masculine)"
+    },
+    {
+      "id": 9,
+      "input": "أنا",
+      "expected_output": {
+        "part_of_speech": "ضمير",
+        "english_pos": "pronoun",
+        "subcategory": "ضمير منفصل",
+        "properties": {
+          "person": "first",
+          "number": "singular",
+          "case": "nominative"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "أنا is a first person singular pronoun meaning I"
+    },
+    {
+      "id": 10,
+      "input": "بسرعة",
+      "expected_output": {
+        "part_of_speech": "مفعول مطلق",
+        "english_pos": "adverb",
+        "subcategory": "ظرف طريقة",
+        "properties": {
+          "type": "manner",
+          "definiteness": "indefinite"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "بسرعة is an adverb of manner meaning quickly"
+    },
+    {
+      "id": 11,
+      "input": "أمس",
+      "expected_output": {
+        "part_of_speech": "ظرف زمان",
+        "english_pos": "adverb",
+        "subcategory": "ظرف زمان متصرف",
+        "properties": {
+          "type": "time",
+          "specificity": "definite_time"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "أمس is a time adverb meaning yesterday"
+    },
+    {
+      "id": 12,
+      "input": "هنا",
+      "expected_output": {
+        "part_of_speech": "ظرف مكان",
+        "english_pos": "adverb",
+        "subcategory": "ظرف مكان",
+        "properties": {
+          "type": "place",
+          "distance": "near"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "هنا is a place adverb meaning here"
+    },
+    {
+      "id": 13,
+      "input": "لكن",
+      "expected_output": {
+        "part_of_speech": "حرف عطف",
+        "english_pos": "conjunction",
+        "subcategory": "حرف استدراك",
+        "properties": {
+          "function": "contrast"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "لكن is a conjunction meaning but"
+    },
+    {
+      "id": 14,
+      "input": "اكتب",
+      "expected_output": {
+        "part_of_speech": "فعل",
+        "english_pos": "verb",
+        "subcategory": "فعل أمر",
+        "properties": {
+          "mood": "imperative",
+          "person": "second",
+          "gender": "masculine",
+          "number": "singular"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "اكتب is an imperative verb meaning write!"
+    },
+    {
+      "id": 15,
+      "input": "لا",
+      "expected_output": {
+        "part_of_speech": "حرف نفي",
+        "english_pos": "particle",
+        "subcategory": "حرف نفي",
+        "properties": {
+          "function": "negation"
+        }
+      },
+      "difficulty": "easy",
+      "explanation": "لا is a negation particle meaning no/not"
+    },
+    {
+      "id": 16,
+      "input": "استخدم",
+      "expected_output": {
+        "part_of_speech": "فعل",
+        "english_pos": "verb",
+        "subcategory": "فعل ماضي",
+        "properties": {
+          "tense": "past",
+          "person": "third",
+          "gender": "masculine",
+          "number": "singular",
+          "form": "استفعل"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "استخدم is a past tense verb of form استفعل meaning he used"
+    },
+    {
+      "id": 17,
+      "input": "تلك",
+      "expected_output": {
+        "part_of_speech": "اسم إشارة",
+        "english_pos": "demonstrative pronoun",
+        "subcategory": "اسم إشارة للبعيد",
+        "properties": {
+          "gender": "feminine",
+          "number": "singular",
+          "distance": "far"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "تلك is a demonstrative pronoun meaning that (feminine, distant)"
+    },
+    {
+      "id": 18,
+      "input": "يا",
+      "expected_output": {
+        "part_of_speech": "حرف نداء",
+        "english_pos": "particle",
+        "subcategory": "حرف نداء",
+        "properties": {
+          "function": "vocative"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "يا is a vocative particle used for calling someone"
+    },
+    {
+      "id": 19,
+      "input": "عشرة",
+      "expected_output": {
+        "part_of_speech": "عدد",
+        "english_pos": "numeral",
+        "subcategory": "عدد أصلي",
+        "properties": {
+          "value": "10",
+          "gender": "feminine"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "عشرة is a cardinal number meaning ten"
+    },
+    {
+      "id": 20,
+      "input": "كيف",
+      "expected_output": {
+        "part_of_speech": "اسم استفهام",
+        "english_pos": "interrogative",
+        "subcategory": "اسم استفهام للحال",
+        "properties": {
+          "function": "manner_question"
+        }
+      },
+      "difficulty": "medium",
+      "explanation": "كيف is an interrogative word meaning how"
+    },
+    {
+      "id": 21,
+      "input": "ليس",
+      "expected_output": {
+        "part_of_speech": "فعل ناسخ",
+        "english_pos": "verb",
+        "subcategory": "فعل ناسخ",
+        "properties": {
+          "function": "negation_of_being",
+          "tense": "present"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "ليس is a negating verb meaning is not"
+    },
+    {
+      "id": 22,
+      "input": "إن",
+      "expected_output": {
+        "part_of_speech": "حرف ناسخ",
+        "english_pos": "particle",
+        "subcategory": "إن وأخواتها",
+        "properties": {
+          "function": "emphasis",
+          "effect": "accusative_on_noun"
+        }
+      },
+      "difficulty": "hard",
+      "explanation": "إن is an emphatic particle that affects sentence structure"
+    }
+  ],
+  "evaluation_criteria": {
+    "pos_accuracy": "Part of speech must be correctly identified",
+    "subcategory_accuracy": "Subcategory classification must be correct",
+    "properties_accuracy": "Grammatical properties must be accurate",
+    "scoring": {
+      "all_correct": 1,
+      "pos_correct_only": 0.6,
+      "subcategory_correct": 0.8,
+      "properties_partial": 0.4,
+      "incorrect": 0
+    }
+  }
+} 

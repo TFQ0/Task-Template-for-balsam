@@ -1,0 +1,252 @@
+{
+  "task_type": "arabic_morphological_analysis",
+  "description": "Analyze Arabic words by breaking them into morphological components (prefixes, stems, suffixes)",
+  "language": "arabic",
+  "total_cases": 18,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "كتابي",
+      "expected_output": {
+        "stem": "كتاب",
+        "suffix": "ي",
+        "prefix": "",
+        "meaning": "my book"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "كتاب (book) + ي (my) = كتابي (my book)"
+    },
+    {
+      "id": 2,
+      "input": "يكتبون",
+      "expected_output": {
+        "stem": "كتب",
+        "suffix": "ون",
+        "prefix": "ي",
+        "meaning": "they write"
+      },
+      "difficulty": "easy",
+      "word_type": "verb",
+      "explanation": "ي (they) + كتب (write) + ون (plural masculine) = يكتبون"
+    },
+    {
+      "id": 3,
+      "input": "والكتاب",
+      "expected_output": {
+        "stem": "كتاب",
+        "suffix": "",
+        "prefix": "وال",
+        "meaning": "and the book"
+      },
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "و (and) + ال (the) + كتاب (book) = والكتاب"
+    },
+    {
+      "id": 4,
+      "input": "مدرستها",
+      "expected_output": {
+        "stem": "مدرسة",
+        "suffix": "ها",
+        "prefix": "",
+        "meaning": "her school"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "مدرسة (school) + ها (her) = مدرستها"
+    },
+    {
+      "id": 5,
+      "input": "سيكتبون",
+      "expected_output": {
+        "stem": "كتب",
+        "suffix": "ون",
+        "prefix": "سي",
+        "meaning": "they will write"
+      },
+      "difficulty": "medium",
+      "word_type": "verb",
+      "explanation": "س (will) + ي (they) + كتب (write) + ون (plural masculine) = سيكتبون"
+    },
+    {
+      "id": 6,
+      "input": "بالمدرسة",
+      "expected_output": {
+        "stem": "مدرسة",
+        "suffix": "",
+        "prefix": "بال",
+        "meaning": "in the school"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "ب (in) + ال (the) + مدرسة (school) = بالمدرسة"
+    },
+    {
+      "id": 7,
+      "input": "استخدامها",
+      "expected_output": {
+        "stem": "استخدام",
+        "suffix": "ها",
+        "prefix": "",
+        "meaning": "its usage"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "استخدام (usage) + ها (its) = استخدامها"
+    },
+    {
+      "id": 8,
+      "input": "فيستطيعون",
+      "expected_output": {
+        "stem": "استطاع",
+        "suffix": "ون",
+        "prefix": "في",
+        "meaning": "so they can"
+      },
+      "difficulty": "hard",
+      "word_type": "verb",
+      "explanation": "ف (so) + ي (they) + استطاع (can) + ون (plural masculine) = فيستطيعون"
+    },
+    {
+      "id": 9,
+      "input": "ومعلوماتهم",
+      "expected_output": {
+        "stem": "معلومات",
+        "suffix": "هم",
+        "prefix": "و",
+        "meaning": "and their information"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "و (and) + معلومات (information) + هم (their) = ومعلوماتهم"
+    },
+    {
+      "id": 10,
+      "input": "لايستطيعون",
+      "expected_output": {
+        "stem": "استطاع",
+        "suffix": "ون",
+        "prefix": "لاي",
+        "meaning": "they cannot"
+      },
+      "difficulty": "hard",
+      "word_type": "verb",
+      "explanation": "لا (not) + ي (they) + استطاع (can) + ون (plural masculine) = لايستطيعون"
+    },
+    {
+      "id": 11,
+      "input": "كتابهما",
+      "expected_output": {
+        "stem": "كتاب",
+        "suffix": "هما",
+        "prefix": "",
+        "meaning": "their book (dual)"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "كتاب (book) + هما (their dual) = كتابهما"
+    },
+    {
+      "id": 12,
+      "input": "وسيذهبان",
+      "expected_output": {
+        "stem": "ذهب",
+        "suffix": "ان",
+        "prefix": "وسي",
+        "meaning": "and they will go (dual)"
+      },
+      "difficulty": "hard",
+      "word_type": "verb",
+      "explanation": "و (and) + س (will) + ي (they) + ذهب (go) + ان (dual) = وسيذهبان"
+    },
+    {
+      "id": 13,
+      "input": "مكتبتان",
+      "expected_output": {
+        "stem": "مكتبة",
+        "suffix": "ان",
+        "prefix": "",
+        "meaning": "two libraries"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "مكتبة (library) + ان (two) = مكتبتان"
+    },
+    {
+      "id": 14,
+      "input": "فالمعلومات",
+      "expected_output": {
+        "stem": "معلومات",
+        "suffix": "",
+        "prefix": "فال",
+        "meaning": "so the information"
+      },
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "ف (so) + ال (the) + معلومات (information) = فالمعلومات"
+    },
+    {
+      "id": 15,
+      "input": "تجربتهن",
+      "expected_output": {
+        "stem": "تجربة",
+        "suffix": "هن",
+        "prefix": "",
+        "meaning": "their experience (feminine plural)"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "تجربة (experience) + هن (their feminine plural) = تجربتهن"
+    },
+    {
+      "id": 16,
+      "input": "يتحدثن",
+      "expected_output": {
+        "stem": "تحدث",
+        "suffix": "ن",
+        "prefix": "ي",
+        "meaning": "they speak (feminine plural)"
+      },
+      "difficulty": "medium",
+      "word_type": "verb",
+      "explanation": "ي (they) + تحدث (speak) + ن (feminine plural) = يتحدثن"
+    },
+    {
+      "id": 17,
+      "input": "بمسؤولياتهم",
+      "expected_output": {
+        "stem": "مسؤوليات",
+        "suffix": "هم",
+        "prefix": "ب",
+        "meaning": "with their responsibilities"
+      },
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "ب (with) + مسؤوليات (responsibilities) + هم (their) = بمسؤولياتهم"
+    },
+    {
+      "id": 18,
+      "input": "وستكتبين",
+      "expected_output": {
+        "stem": "كتب",
+        "suffix": "ين",
+        "prefix": "وست",
+        "meaning": "and you will write (feminine)"
+      },
+      "difficulty": "hard",
+      "word_type": "verb",
+      "explanation": "و (and) + س (will) + ت (you) + كتب (write) + ين (feminine) = وستكتبين"
+    }
+  ],
+  "evaluation_criteria": {
+    "component_accuracy": "Each morphological component must be identified correctly",
+    "meaning_accuracy": "The overall meaning interpretation must be correct",
+    "scoring": {
+      "all_correct": 1,
+      "partial_correct": 0.5,
+      "incorrect": 0
+    }
+  }
+} 

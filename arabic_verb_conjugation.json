@@ -1,0 +1,496 @@
+{
+  "task_type": "arabic_verb_conjugation",
+  "description": "Conjugate Arabic verbs in different tenses, persons, and numbers",
+  "language": "arabic",
+  "total_cases": 25,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": {
+        "verb_root": "كتب",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "first",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "أكتب",
+        "english_meaning": "I write",
+        "verb_pattern": "أفعل"
+      },
+      "difficulty": "easy",
+      "explanation": "First person singular present conjugation of كتب (to write)"
+    },
+    {
+      "id": 2,
+      "input": {
+        "verb_root": "كتب",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "كتب",
+        "english_meaning": "he wrote",
+        "verb_pattern": "فعل"
+      },
+      "difficulty": "easy",
+      "explanation": "Third person singular masculine past conjugation of كتب (to write)"
+    },
+    {
+      "id": 3,
+      "input": {
+        "verb_root": "كتب",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "يكتبون",
+        "english_meaning": "they write",
+        "verb_pattern": "يفعلون"
+      },
+      "difficulty": "easy",
+      "explanation": "Third person plural masculine present conjugation of كتب (to write)"
+    },
+    {
+      "id": 4,
+      "input": {
+        "verb_root": "درس",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تدرسين",
+        "english_meaning": "you study (fem.)",
+        "verb_pattern": "تفعلين"
+      },
+      "difficulty": "medium",
+      "explanation": "Second person singular feminine present conjugation of درس (to study)"
+    },
+    {
+      "id": 5,
+      "input": {
+        "verb_root": "ذهب",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "first",
+          "number": "plural",
+          "gender": "mixed"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "ذهبنا",
+        "english_meaning": "we went",
+        "verb_pattern": "فعلنا"
+      },
+      "difficulty": "medium",
+      "explanation": "First person plural past conjugation of ذهب (to go)"
+    },
+    {
+      "id": 6,
+      "input": {
+        "verb_root": "قرأ",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "dual",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "يقرآن",
+        "english_meaning": "they read (dual masc.)",
+        "verb_pattern": "يفعلان"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person dual masculine present conjugation of قرأ (to read)"
+    },
+    {
+      "id": 7,
+      "input": {
+        "verb_root": "لعب",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "third",
+          "number": "plural",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "لعبن",
+        "english_meaning": "they played (fem.)",
+        "verb_pattern": "فعلن"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person plural feminine past conjugation of لعب (to play)"
+    },
+    {
+      "id": 8,
+      "input": {
+        "verb_root": "سأل",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تسألون",
+        "english_meaning": "you ask (masc. pl.)",
+        "verb_pattern": "تفعلون"
+      },
+      "difficulty": "medium",
+      "explanation": "Second person plural masculine present conjugation of سأل (to ask)"
+    },
+    {
+      "id": 9,
+      "input": {
+        "verb_root": "فهم",
+        "target_conjugation": {
+          "tense": "imperative",
+          "person": "second",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "افهم",
+        "english_meaning": "understand!",
+        "verb_pattern": "افعل"
+      },
+      "difficulty": "medium",
+      "explanation": "Imperative form of فهم (to understand) for second person singular masculine"
+    },
+    {
+      "id": 10,
+      "input": {
+        "verb_root": "كتب",
+        "target_conjugation": {
+          "tense": "imperative",
+          "person": "second",
+          "number": "plural",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "اكتبن",
+        "english_meaning": "write! (fem. pl.)",
+        "verb_pattern": "افعلن"
+      },
+      "difficulty": "hard",
+      "explanation": "Imperative form of كتب (to write) for second person plural feminine"
+    },
+    {
+      "id": 11,
+      "input": {
+        "verb_root": "أكل",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تأكل",
+        "english_meaning": "she eats",
+        "verb_pattern": "تفعل"
+      },
+      "difficulty": "easy",
+      "explanation": "Third person singular feminine present conjugation of أكل (to eat)"
+    },
+    {
+      "id": 12,
+      "input": {
+        "verb_root": "شرب",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "second",
+          "number": "dual",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "شربتما",
+        "english_meaning": "you drank (dual fem.)",
+        "verb_pattern": "فعلتما"
+      },
+      "difficulty": "hard",
+      "explanation": "Second person dual feminine past conjugation of شرب (to drink)"
+    },
+    {
+      "id": 13,
+      "input": {
+        "verb_root": "نام",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "first",
+          "number": "plural",
+          "gender": "mixed"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "ننام",
+        "english_meaning": "we sleep",
+        "verb_pattern": "نفعل"
+      },
+      "difficulty": "medium",
+      "explanation": "First person plural present conjugation of نام (to sleep)"
+    },
+    {
+      "id": 14,
+      "input": {
+        "verb_root": "جلس",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "second",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "جلست",
+        "english_meaning": "you sat (masc.)",
+        "verb_pattern": "فعلت"
+      },
+      "difficulty": "easy",
+      "explanation": "Second person singular masculine past conjugation of جلس (to sit)"
+    },
+    {
+      "id": 15,
+      "input": {
+        "verb_root": "خرج",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "plural",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "يخرجن",
+        "english_meaning": "they go out (fem. pl.)",
+        "verb_pattern": "يفعلن"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person plural feminine present conjugation of خرج (to go out)"
+    },
+    {
+      "id": 16,
+      "input": {
+        "verb_root": "وصل",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "third",
+          "number": "dual",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "وصلتا",
+        "english_meaning": "they arrived (dual fem.)",
+        "verb_pattern": "فعلتا"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person dual feminine past conjugation of وصل (to arrive)"
+    },
+    {
+      "id": 17,
+      "input": {
+        "verb_root": "عمل",
+        "target_conjugation": {
+          "tense": "imperative",
+          "person": "second",
+          "number": "dual",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "اعملا",
+        "english_meaning": "work! (dual masc.)",
+        "verb_pattern": "افعلا"
+      },
+      "difficulty": "hard",
+      "explanation": "Imperative form of عمل (to work) for second person dual masculine"
+    },
+    {
+      "id": 18,
+      "input": {
+        "verb_root": "حضر",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "second",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تحضر",
+        "english_meaning": "you attend (masc.)",
+        "verb_pattern": "تفعل"
+      },
+      "difficulty": "medium",
+      "explanation": "Second person singular masculine present conjugation of حضر (to attend)"
+    },
+    {
+      "id": 19,
+      "input": {
+        "verb_root": "سافر",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "third",
+          "number": "singular",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "سافرت",
+        "english_meaning": "she traveled",
+        "verb_pattern": "فعلت"
+      },
+      "difficulty": "medium",
+      "explanation": "Third person singular feminine past conjugation of سافر (to travel)"
+    },
+    {
+      "id": 20,
+      "input": {
+        "verb_root": "تكلم",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "second",
+          "number": "plural",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تتكلمن",
+        "english_meaning": "you speak (fem. pl.)",
+        "verb_pattern": "تتفعلن"
+      },
+      "difficulty": "hard",
+      "explanation": "Second person plural feminine present conjugation of تكلم (to speak)"
+    },
+    {
+      "id": 21,
+      "input": {
+        "verb_root": "رجع",
+        "target_conjugation": {
+          "tense": "imperative",
+          "person": "second",
+          "number": "singular",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "ارجعي",
+        "english_meaning": "return! (fem.)",
+        "verb_pattern": "افعلي"
+      },
+      "difficulty": "medium",
+      "explanation": "Imperative form of رجع (to return) for second person singular feminine"
+    },
+    {
+      "id": 22,
+      "input": {
+        "verb_root": "بدأ",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "dual",
+          "gender": "feminine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "تبدآن",
+        "english_meaning": "they begin (dual fem.)",
+        "verb_pattern": "تفعلان"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person dual feminine present conjugation of بدأ (to begin)"
+    },
+    {
+      "id": 23,
+      "input": {
+        "verb_root": "انتهى",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "first",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "انتهيت",
+        "english_meaning": "I finished",
+        "verb_pattern": "انتفعلت"
+      },
+      "difficulty": "hard",
+      "explanation": "First person singular past conjugation of انتهى (to finish)"
+    },
+    {
+      "id": 24,
+      "input": {
+        "verb_root": "استخدم",
+        "target_conjugation": {
+          "tense": "present",
+          "person": "third",
+          "number": "singular",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "يستخدم",
+        "english_meaning": "he uses",
+        "verb_pattern": "يستفعل"
+      },
+      "difficulty": "hard",
+      "explanation": "Third person singular masculine present conjugation of استخدم (to use)"
+    },
+    {
+      "id": 25,
+      "input": {
+        "verb_root": "اجتمع",
+        "target_conjugation": {
+          "tense": "past",
+          "person": "second",
+          "number": "plural",
+          "gender": "masculine"
+        }
+      },
+      "expected_output": {
+        "conjugated_form": "اجتمعتم",
+        "english_meaning": "you met (masc. pl.)",
+        "verb_pattern": "افتعلتم"
+      },
+      "difficulty": "hard",
+      "explanation": "Second person plural masculine past conjugation of اجتمع (to meet)"
+    }
+  ],
+  "evaluation_criteria": {
+    "conjugation_accuracy": "The conjugated form must be grammatically correct",
+    "pattern_recognition": "The verb pattern must be correctly identified",
+    "meaning_accuracy": "The English meaning must be correct",
+    "scoring": {
+      "all_correct": 1,
+      "conjugation_correct_only": 0.8,
+      "pattern_correct_only": 0.2,
+      "meaning_correct_only": 0.3,
+      "incorrect": 0
+    }
+  }
+} 

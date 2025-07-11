@@ -1,0 +1,235 @@
+{
+  "task_type": "arabic_synonyms_antonyms",
+  "description": "Identify synonyms and antonyms for Arabic words",
+  "language": "arabic",
+  "total_cases": 24,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "كبير",
+      "task_subtype": "synonym",
+      "expected_output": ["عظيم", "ضخم", "كبير الحجم", "هائل"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "كبير (big) has synonyms like عظيم (great), ضخم (huge), هائل (enormous)"
+    },
+    {
+      "id": 2,
+      "input": "صغير",
+      "task_subtype": "antonym",
+      "expected_output": ["كبير", "عظيم", "ضخم", "هائل"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "صغير (small) has antonyms like كبير (big), عظيم (great), ضخم (huge)"
+    },
+    {
+      "id": 3,
+      "input": "سعيد",
+      "task_subtype": "synonym",
+      "expected_output": ["مسرور", "فرحان", "مبتهج", "راض"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "سعيد (happy) has synonyms like مسرور (delighted), فرحان (joyful), مبتهج (cheerful)"
+    },
+    {
+      "id": 4,
+      "input": "حزين",
+      "task_subtype": "antonym",
+      "expected_output": ["سعيد", "مسرور", "فرحان", "مبتهج"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "حزين (sad) has antonyms like سعيد (happy), مسرور (delighted), فرحان (joyful)"
+    },
+    {
+      "id": 5,
+      "input": "جميل",
+      "task_subtype": "synonym",
+      "expected_output": ["حسن", "بديع", "رائع", "جذاب"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "جميل (beautiful) has synonyms like حسن (good), بديع (wonderful), رائع (amazing)"
+    },
+    {
+      "id": 6,
+      "input": "قبيح",
+      "task_subtype": "antonym",
+      "expected_output": ["جميل", "حسن", "بديع", "رائع"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "قبيح (ugly) has antonyms like جميل (beautiful), حسن (good), رائع (amazing)"
+    },
+    {
+      "id": 7,
+      "input": "ذكي",
+      "task_subtype": "synonym",
+      "expected_output": ["فطن", "نبيه", "لبيب", "حاذق"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "ذكي (smart) has synonyms like فطن (clever), نبيه (intelligent), لبيب (wise)"
+    },
+    {
+      "id": 8,
+      "input": "غبي",
+      "task_subtype": "antonym",
+      "expected_output": ["ذكي", "فطن", "نبيه", "حاذق"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "غبي (stupid) has antonyms like ذكي (smart), فطن (clever), نبيه (intelligent)"
+    },
+    {
+      "id": 9,
+      "input": "شجاع",
+      "task_subtype": "synonym",
+      "expected_output": ["باسل", "مقدام", "جسور", "بطل"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "شجاع (brave) has synonyms like باسل (courageous), مقدام (bold), جسور (daring)"
+    },
+    {
+      "id": 10,
+      "input": "جبان",
+      "task_subtype": "antonym",
+      "expected_output": ["شجاع", "باسل", "مقدام", "جسور"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "جبان (coward) has antonyms like شجاع (brave), باسل (courageous), مقدام (bold)"
+    },
+    {
+      "id": 11,
+      "input": "واسع",
+      "task_subtype": "synonym",
+      "expected_output": ["فسيح", "رحب", "عريض", "متسع"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "واسع (wide) has synonyms like فسيح (spacious), رحب (roomy), عريض (broad)"
+    },
+    {
+      "id": 12,
+      "input": "ضيق",
+      "task_subtype": "antonym",
+      "expected_output": ["واسع", "فسيح", "رحب", "عريض"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "ضيق (narrow) has antonyms like واسع (wide), فسيح (spacious), رحب (roomy)"
+    },
+    {
+      "id": 13,
+      "input": "عالي",
+      "task_subtype": "synonym",
+      "expected_output": ["مرتفع", "شاهق", "طويل", "سام"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "عالي (high) has synonyms like مرتفع (elevated), شاهق (towering), طويل (tall)"
+    },
+    {
+      "id": 14,
+      "input": "منخفض",
+      "task_subtype": "antonym",
+      "expected_output": ["عالي", "مرتفع", "شاهق", "طويل"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "منخفض (low) has antonyms like عالي (high), مرتفع (elevated), شاهق (towering)"
+    },
+    {
+      "id": 15,
+      "input": "عظيم",
+      "task_subtype": "synonym",
+      "expected_output": ["جليل", "نبيل", "فخيم", "مهيب"],
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "عظيم (great) has synonyms like جليل (magnificent), نبيل (noble), فخيم (majestic)"
+    },
+    {
+      "id": 16,
+      "input": "حقير",
+      "task_subtype": "antonym",
+      "expected_output": ["عظيم", "جليل", "نبيل", "كريم"],
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "حقير (despicable) has antonyms like عظيم (great), جليل (magnificent), نبيل (noble)"
+    },
+    {
+      "id": 17,
+      "input": "صادق",
+      "task_subtype": "synonym",
+      "expected_output": ["صحيح", "حقيقي", "أمين", "مخلص"],
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "صادق (truthful) has synonyms like صحيح (correct), حقيقي (real), أمين (trustworthy)"
+    },
+    {
+      "id": 18,
+      "input": "كاذب",
+      "task_subtype": "antonym",
+      "expected_output": ["صادق", "صحيح", "أمين", "مخلص"],
+      "difficulty": "hard",
+      "word_type": "adjective",
+      "explanation": "كاذب (liar) has antonyms like صادق (truthful), صحيح (correct), أمين (trustworthy)"
+    },
+    {
+      "id": 19,
+      "input": "نظيف",
+      "task_subtype": "synonym",
+      "expected_output": ["طاهر", "نقي", "صافي", "مطهر"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "نظيف (clean) has synonyms like طاهر (pure), نقي (clear), صافي (pure)"
+    },
+    {
+      "id": 20,
+      "input": "قذر",
+      "task_subtype": "antonym",
+      "expected_output": ["نظيف", "طاهر", "نقي", "صافي"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "قذر (dirty) has antonyms like نظيف (clean), طاهر (pure), نقي (clear)"
+    },
+    {
+      "id": 21,
+      "input": "قوي",
+      "task_subtype": "synonym",
+      "expected_output": ["قدير", "شديد", "صلب", "متين"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "قوي (strong) has synonyms like قدير (powerful), شديد (intense), صلب (solid)"
+    },
+    {
+      "id": 22,
+      "input": "ضعيف",
+      "task_subtype": "antonym",
+      "expected_output": ["قوي", "قدير", "شديد", "متين"],
+      "difficulty": "easy",
+      "word_type": "adjective",
+      "explanation": "ضعيف (weak) has antonyms like قوي (strong), قدير (powerful), شديد (intense)"
+    },
+    {
+      "id": 23,
+      "input": "سريع",
+      "task_subtype": "synonym",
+      "expected_output": ["عاجل", "مسرع", "خاطف", "برقي"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "سريع (fast) has synonyms like عاجل (urgent), مسرع (speedy), خاطف (swift)"
+    },
+    {
+      "id": 24,
+      "input": "بطيء",
+      "task_subtype": "antonym",
+      "expected_output": ["سريع", "عاجل", "مسرع", "خاطف"],
+      "difficulty": "medium",
+      "word_type": "adjective",
+      "explanation": "بطيء (slow) has antonyms like سريع (fast), عاجل (urgent), مسرع (speedy)"
+    }
+  ],
+  "evaluation_criteria": {
+    "match_requirement": "At least one word from expected output must be provided",
+    "semantic_accuracy": "Provided words must have correct semantic relationship",
+    "scoring": {
+      "exact_match": 1,
+      "partial_match": 0.7,
+      "semantic_match": 0.5,
+      "incorrect": 0
+    }
+  }
+} 

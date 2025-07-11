@@ -1,0 +1,177 @@
+{
+  "task_type": "arabic_root_extraction",
+  "description": "Extract the three-letter root from Arabic words",
+  "language": "arabic",
+  "total_cases": 20,
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "كتاب",
+      "expected_output": "ك ت ب",
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "The root of كتاب (book) is ك-ت-ب relating to writing"
+    },
+    {
+      "id": 2,
+      "input": "مدرسة",
+      "expected_output": "د ر س",
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "The root of مدرسة (school) is د-ر-س relating to studying"
+    },
+    {
+      "id": 3,
+      "input": "يكتب",
+      "expected_output": "ك ت ب",
+      "difficulty": "easy",
+      "word_type": "verb",
+      "explanation": "The root of يكتب (he writes) is ك-ت-ب relating to writing"
+    },
+    {
+      "id": 4,
+      "input": "استخدام",
+      "expected_output": "خ د م",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of استخدام (usage) is خ-د-م relating to serving/using"
+    },
+    {
+      "id": 5,
+      "input": "مستشفى",
+      "expected_output": "ش ف ي",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of مستشفى (hospital) is ش-ف-ي relating to healing"
+    },
+    {
+      "id": 6,
+      "input": "يستطيع",
+      "expected_output": "ط و ع",
+      "difficulty": "medium",
+      "word_type": "verb",
+      "explanation": "The root of يستطيع (he can) is ط-و-ع relating to ability"
+    },
+    {
+      "id": 7,
+      "input": "انتصار",
+      "expected_output": "ن ص ر",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of انتصار (victory) is ن-ص-ر relating to helping/winning"
+    },
+    {
+      "id": 8,
+      "input": "تطوير",
+      "expected_output": "ط و ر",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of تطوير (development) is ط-و-ر relating to developing"
+    },
+    {
+      "id": 9,
+      "input": "استقلال",
+      "expected_output": "ق ل ل",
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "The root of استقلال (independence) is ق-ل-ل relating to being few/independent"
+    },
+    {
+      "id": 10,
+      "input": "استثمار",
+      "expected_output": "ث م ر",
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "The root of استثمار (investment) is ث-م-ر relating to fruit/profit"
+    },
+    {
+      "id": 11,
+      "input": "مسؤولية",
+      "expected_output": "س أ ل",
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "The root of مسؤولية (responsibility) is س-أ-ل relating to asking/questioning"
+    },
+    {
+      "id": 12,
+      "input": "يتحدث",
+      "expected_output": "ح د ث",
+      "difficulty": "medium",
+      "word_type": "verb",
+      "explanation": "The root of يتحدث (he speaks) is ح-د-ث relating to happening/talking"
+    },
+    {
+      "id": 13,
+      "input": "معلومات",
+      "expected_output": "ع ل م",
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "The root of معلومات (information) is ع-ل-م relating to knowing"
+    },
+    {
+      "id": 14,
+      "input": "تجربة",
+      "expected_output": "ج ر ب",
+      "difficulty": "easy",
+      "word_type": "noun",
+      "explanation": "The root of تجربة (experience) is ج-ر-ب relating to trying"
+    },
+    {
+      "id": 15,
+      "input": "مقاومة",
+      "expected_output": "ق و م",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of مقاومة (resistance) is ق-و-م relating to standing/rising"
+    },
+    {
+      "id": 16,
+      "input": "اجتماع",
+      "expected_output": "ج م ع",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of اجتماع (meeting) is ج-م-ع relating to gathering"
+    },
+    {
+      "id": 17,
+      "input": "يستغرق",
+      "expected_output": "غ ر ق",
+      "difficulty": "hard",
+      "word_type": "verb",
+      "explanation": "The root of يستغرق (it takes time) is غ-ر-ق relating to drowning/immersing"
+    },
+    {
+      "id": 18,
+      "input": "اختبار",
+      "expected_output": "خ ب ر",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of اختبار (test) is خ-ب-ر relating to news/testing"
+    },
+    {
+      "id": 19,
+      "input": "تفسير",
+      "expected_output": "ف س ر",
+      "difficulty": "medium",
+      "word_type": "noun",
+      "explanation": "The root of تفسير (interpretation) is ف-س-ر relating to explaining"
+    },
+    {
+      "id": 20,
+      "input": "استنتاج",
+      "expected_output": "ن ت ج",
+      "difficulty": "hard",
+      "word_type": "noun",
+      "explanation": "The root of استنتاج (conclusion) is ن-ت-ج relating to producing/concluding"
+    }
+  ],
+  "evaluation_criteria": {
+    "exact_match": "Root letters must match exactly",
+    "order_sensitive": "Order of root letters matters",
+    "scoring": {
+      "correct": 1,
+      "incorrect": 0
+    }
+  }
+} 
